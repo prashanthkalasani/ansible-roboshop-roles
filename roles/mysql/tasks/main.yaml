@@ -10,5 +10,4 @@
     enabled: yes
 
 - name: setup root password
-  ansible.builtin.command: mysql_secure_installation --set-root-pass {{ Dpspk14203499 }}
-  #ansible-playbook -i inventory playbook.yaml -e "MYSQL_ROOT_PASSWORD=YourStrongPassword"
+  ansible.builtin.command: mysql_secure_installation --set-root-pass {{ MYSQL_ROOT_PASSWORD }}
